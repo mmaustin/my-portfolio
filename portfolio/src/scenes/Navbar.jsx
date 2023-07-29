@@ -29,7 +29,7 @@ const Navbar = ({selectedPage, setSelectedPage}) => {
         <h4 className="font-playfair text-3xl font-bold">MA</h4>
 
         {isAboveSmallScreens ? (
-          <div className="flex justify-between gap-16 font-opensans text-sm font-semibol">
+          <div className="flex justify-between gap-16 font-opensans text-sm font-semibold">
             <Link
               page="Home" selectedPage={selectedPage} setSelectedPage={setSelectedPage}
             />
@@ -52,11 +52,26 @@ const Navbar = ({selectedPage, setSelectedPage}) => {
         </button>)}
 
         {!isAboveSmallScreens && isMenuToggled && (
-          <div className="fixed right-0 bottom-0 h-full bg-blue w-[300px">
+          <div className="fixed right-0 bottom-0 h-full bg-blue w-[300px]">
             <div className="flex justify-end p-12">
               <button onClick={() => setIsMenuToggled(!isMenuToggled)}>
                 <img alt="close-icon" src="../assets/close-icon.svg" />
               </button>
+            </div>
+
+            <div className="flex flex-col gap-10 ml-[33%] text-2xl text-deep-blue">
+              <Link
+                page="Home" selectedPage={selectedPage} setSelectedPage={setSelectedPage}
+              />
+              <Link
+                page="Skills" selectedPage={selectedPage} setSelectedPage={setSelectedPage}
+              />
+              <Link
+                page="Project" selectedPage={selectedPage} setSelectedPage={setSelectedPage}
+              />
+              <Link
+                page="Contact" selectedPage={selectedPage} setSelectedPage={setSelectedPage}
+              />              
             </div>
           </div>
         )}
