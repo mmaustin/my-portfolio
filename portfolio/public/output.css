@@ -586,6 +586,10 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.visible{
+  visibility: visible;
+}
+
 .fixed{
   position: fixed;
 }
@@ -614,16 +618,24 @@ video {
   top: 60%;
 }
 
-.z-40{
-  z-index: 40;
+.z-0{
+  z-index: 0;
 }
 
 .z-10{
   z-index: 10;
 }
 
-.z-0{
-  z-index: 0;
+.z-30{
+  z-index: 30;
+}
+
+.z-40{
+  z-index: 40;
+}
+
+.z-20{
+  z-index: 20;
 }
 
 .mx-auto{
@@ -631,28 +643,36 @@ video {
   margin-right: auto;
 }
 
-.ml-\[33\%\]{
-  margin-left: 33%;
-}
-
 .ml-20{
   margin-left: 5rem;
 }
 
-.mt-7{
-  margin-top: 1.75rem;
+.ml-\[33\%\]{
+  margin-left: 33%;
 }
 
-.mt-10{
-  margin-top: 2.5rem;
+.mt-12{
+  margin-top: 3rem;
 }
 
 .mt-14{
   margin-top: 3.5rem;
 }
 
+.mb-7{
+  margin-bottom: 1.75rem;
+}
+
+.mt-10{
+  margin-top: 2.5rem;
+}
+
 .flex{
   display: flex;
+}
+
+.hidden{
+  display: none;
 }
 
 .h-3{
@@ -681,6 +701,10 @@ video {
 
 .max-w-\[400px\]{
   max-width: 400px;
+}
+
+.basis-2\/5{
+  flex-basis: 40%;
 }
 
 .basis-3\/5{
@@ -727,15 +751,6 @@ video {
   border-radius: 9999px;
 }
 
-.rounded-lg{
-  border-radius: 0.5rem;
-}
-
-.rounded-t-lg{
-  border-top-left-radius: 0.5rem;
-  border-top-right-radius: 0.5rem;
-}
-
 .rounded-t-full{
   border-top-left-radius: 9999px;
   border-top-right-radius: 9999px;
@@ -778,14 +793,18 @@ video {
   padding: 0.5rem;
 }
 
+.py-10{
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
 .py-6{
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
 }
 
-.py-10{
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
+.text-center{
+  text-align: center;
 }
 
 .font-opensans{
@@ -804,6 +823,11 @@ video {
 .text-3xl{
   font-size: 1.875rem;
   line-height: 2.25rem;
+}
+
+.text-6xl{
+  font-size: 3.75rem;
+  line-height: 1;
 }
 
 .text-sm{
@@ -866,6 +890,16 @@ body,
   position: absolute;
 }
 
+.before\:-left-20::before{
+  content: var(--tw-content);
+  left: -5rem;
+}
+
+.before\:-top-20::before{
+  content: var(--tw-content);
+  top: -5rem;
+}
+
 .before\:left-\[-50\%\]::before{
   content: var(--tw-content);
   left: -50%;
@@ -876,14 +910,14 @@ body,
   top: -50%;
 }
 
-.before\:-left-20::before{
+.before\:-left-\[25px\]::before{
   content: var(--tw-content);
-  left: -5rem;
+  left: -25px;
 }
 
-.before\:-top-20::before{
+.before\:-top-\[70px\]::before{
   content: var(--tw-content);
-  top: -5rem;
+  top: -70px;
 }
 
 .before\:z-\[-1\]::before{
@@ -932,16 +966,16 @@ body,
   border-width: 2px;
 }
 
-.before\:border-yellow::before{
-  content: var(--tw-content);
-  --tw-border-opacity: 1;
-  border-color: rgb(253 204 73 / var(--tw-border-opacity));
-}
-
 .before\:border-blue::before{
   content: var(--tw-content);
   --tw-border-opacity: 1;
   border-color: rgb(44 188 233 / var(--tw-border-opacity));
+}
+
+.before\:border-yellow::before{
+  content: var(--tw-content);
+  --tw-border-opacity: 1;
+  border-color: rgb(253 204 73 / var(--tw-border-opacity));
 }
 
 .hover\:text-yellow:hover{
@@ -958,6 +992,26 @@ body,
 .hover\:filter:hover{
   -webkit-filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
           filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+@media (min-width: 480px){
+  .xs\:relative{
+    position: relative;
+  }
+
+  .xs\:font-semibold{
+    font-weight: 600;
+  }
+
+  .xs\:text-deep-blue{
+    --tw-text-opacity: 1;
+    color: rgb(1 0 38 / var(--tw-text-opacity));
+  }
+
+  .xs\:before\:content-brush::before{
+    --tw-content: url('./assets/brush.png');
+    content: var(--tw-content);
+  }
 }
 
 @media (min-width: 1060px){
@@ -977,12 +1031,12 @@ body,
     height: 100%;
   }
 
-  .md\:max-w-\[600px\]{
-    max-width: 600px;
-  }
-
   .md\:max-w-\[400px\]{
     max-width: 400px;
+  }
+
+  .md\:max-w-\[600px\]{
+    max-width: 600px;
   }
 
   .md\:items-center{
@@ -991,5 +1045,9 @@ body,
 
   .md\:justify-between{
     justify-content: space-between;
+  }
+
+  .md\:text-start{
+    text-align: start;
   }
 }
