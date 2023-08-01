@@ -3,6 +3,7 @@ import DotGroup from "./scenes/DotGroup";
 import useMediaQuery from './hooks/useMediaQuery';
 import Landing from './scenes/Landing';
 import Navbar from './scenes/Navbar';
+import LineGradient from './components/LineGradient';
 
 function App() {
 
@@ -34,6 +35,7 @@ function App() {
         )}
         <Landing setSelectedPage={setSelectedPage} />
       </div>
+      <LineGradient />
     </div>
   );
 }
