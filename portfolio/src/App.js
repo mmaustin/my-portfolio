@@ -3,6 +3,7 @@ import DotGroup from "./scenes/DotGroup";
 import useMediaQuery from './hooks/useMediaQuery';
 import Landing from './scenes/Landing';
 import Navbar from './scenes/Navbar';
+import MySkills from './scenes/MySkills';
 import LineGradient from './components/LineGradient';
 
 function App() {
@@ -26,7 +27,7 @@ function App() {
   // </h1>
     <div className="app bg-deep-blue " >
       <Navbar isTopOfPAge={isTopOfPAge} selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
-      <div className='w-5/6 mx-auto md:h-full '>
+      <div className='w-5/6 mx-auto md:h-full'>
         {isAboveMediumScreens && (
           <DotGroup
             selectedPage={selectedPage}
@@ -36,6 +37,9 @@ function App() {
         <Landing setSelectedPage={setSelectedPage} />
       </div>
       <LineGradient />
+      <div className='w-5/6 mx-auto md:h-full'>
+        <MySkills />
+      </div>
     </div>
   );
 }
