@@ -29,6 +29,21 @@ const MySkills = () => {
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet neque sed facilis? Sunt, dolores. A aliquid eaque, eos totam magni sed nam soluta quo nisi quis inventore quasi magnam voluptas?
           </p>
         </motion.div>
+
+        <div className="mt-16 md:mt-0">
+          {isAboveMediumScreeens ? (
+            <div className="relative z-0 ml-20 before:absolute before:-top-10 before:-left-10
+            before:w-full before:h-full before:border-2 before:border-blue before:z-[-1]"
+          >
+            <img className="z-10"
+              alt="skills" src="assets/skills-image.png" />
+          </div>
+          ) : (
+            <img className="z-10"
+              alt="skills" src="assets/skills-image.png" />
+          )}
+        </div>
+
       </div>
     </section>
   )
