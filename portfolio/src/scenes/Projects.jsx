@@ -16,6 +16,23 @@ const Projects = () => {
     visible: {opacity: 1, scale: 1}
   }
 
+  const Project = ({title}) => {
+    const overlayStyles = `absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500 bg-grey z-30 flex-col justify-center items-center text-center p-16 text-deep-blue`;
+
+    const projectTitle = title.split(" ").join("-").toLowerCase();
+
+    return (
+      <motion.div variants={projectVariant} className="relative">
+        <div className={overlayStyles}></div>
+        <p className="text-2xl font-playfair">{title}</p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Error tempora placeat mollitia cum, eius eum repudiandae id, quam pariatur ipsa, esse excepturi? Sint, consectetur illum quia nulla fugiat facere officiis.
+        </p>
+      </motion.div>
+    )
+
+  }
+
   return (
     <section id="projects" className="pt-48 pb-48">
       <motion.div
@@ -55,6 +72,7 @@ const Projects = () => {
           >
             USER INTERFACE
           </div>
+          <Project title="Project 1" />
         </motion.div>        
       </div>
     </section>
