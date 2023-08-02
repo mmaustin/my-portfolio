@@ -28,7 +28,7 @@ function App() {
   // </h1>
     <div className="app bg-deep-blue " >
       <Navbar isTopOfPAge={isTopOfPAge} selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
-      <div className='w-5/6 mx-auto md:h-full'>
+      <div className="w-5/6 mx-auto md:h-full">
         {isAboveMediumScreens && (
           <DotGroup
             selectedPage={selectedPage}
@@ -38,11 +38,11 @@ function App() {
         <Landing setSelectedPage={setSelectedPage} />
       </div>
       <LineGradient />
-      <div className='w-5/6 mx-auto md:h-full'>
+      <div className="w-5/6 mx-auto ">
         <MySkills />
       </div>
       <LineGradient />
-      <div className='w-5/6 mx-auto'>
+      <div className="w-5/6 mx-auto">
         <Projects />
       </div>      
     </div>
