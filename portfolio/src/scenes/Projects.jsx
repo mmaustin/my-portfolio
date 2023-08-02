@@ -3,6 +3,19 @@ import LineGradient from "../components/LineGradient";
 
 
 const Projects = () => {
+
+  const container = {
+    hidden: {},
+    visible: {
+      transition: {staggerChildren: 0.2}
+    }
+  };
+
+  const projectVariant = {
+    hidden: {opacity: 0, scale: 0.8},
+    visible: {opacity: 1, scale: 1}
+  }
+
   return (
     <section id="projects" className="pt-48 pb-48">
       <motion.div
@@ -27,7 +40,23 @@ const Projects = () => {
         <p className="mt-10 mb-10">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet neque sed facilis? Sunt, dolores. A aliquid eaque, eos totam magni sed nam soluta quo nisi quis inventore quasi magnam voluptas?
         </p>
-      </motion.div>      
+      </motion.div>
+
+      <div className="flex justify-center">
+        <motion.div
+          className="sm:grid sm:grid-cols-3"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{once:true, amount:0.5}}
+          variants={container}        
+        >
+          <div
+            className="flex justify-center text-center items-center p-10 bg-red max-w-[400px] text-2xl font-playlist font-semibold"
+          >
+            USER INTERFACE
+          </div>
+        </motion.div>        
+      </div>
     </section>
   )
 }
