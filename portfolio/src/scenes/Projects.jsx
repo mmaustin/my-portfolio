@@ -15,7 +15,7 @@ const projectVariant = {
 
 const Project = ({title}) => {
   const overlayStyles = `absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500
-    bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-red`;
+    bg-yellow z-30 flex flex-col justify-center items-center text-center p-16 text-red`;
 
   const projectTitle = title.split(" ").join("-").toLowerCase();
 
@@ -28,7 +28,7 @@ const Project = ({title}) => {
         </p>
       </div>
       <img src={`../assets/${projectTitle}.jpeg`} alt={projectTitle} />
-    </motion.div>
+    </motion.div> 
   )
 
 }
