@@ -882,11 +882,6 @@ video {
   border-top-right-radius: 9999px;
 }
 
-.bg-black{
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
-}
-
 .bg-blue{
   --tw-bg-opacity: 1;
   background-color: rgb(44 188 233 / var(--tw-bg-opacity));
@@ -910,10 +905,6 @@ video {
 .bg-yellow{
   --tw-bg-opacity: 1;
   background-color: rgb(253 204 73 / var(--tw-bg-opacity));
-}
-
-.bg-grey{
-  background-color: ededed;
 }
 
 .bg-gradient-rainblue{
@@ -1221,10 +1212,6 @@ body,
 .hover\:text-yellow:hover{
   --tw-text-opacity: 1;
   color: rgb(253 204 73 / var(--tw-text-opacity));
-}
-
-.hover\:opacity-0:hover{
-  opacity: 0;
 }
 
 .hover\:opacity-50:hover{

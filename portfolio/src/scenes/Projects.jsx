@@ -23,9 +23,9 @@ const Project = ({title}) => {
     <motion.div variants={projectVariant} className="relative">
       <div className={overlayStyles}>
         <p className="text-2xl font-playfair">{title}</p>
-        <p className="mt-7">
+        <a href="https://citizenship-app.onrender.com/" target="_blank" rel="noreferrer"><p className="mt-7">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Error tempora placeat mollitia cum, eius eum repudiandae id, quam pariatur ipsa, esse excepturi? Sint, consectetur illum quia nulla fugiat facere officiis.
-        </p>
+        </p></a>
       </div>
       <img src={`../assets/${projectTitle}.jpeg`} alt={projectTitle} />
     </motion.div> 
