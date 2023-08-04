@@ -36,6 +36,41 @@ const Contact = () => {
           </div>
         </div>
       </motion.div>   
+
+      <div className="md:flex md:justify-between gap-16 mt-5">
+        <motion.div
+          className="basis-1/2 flex justify-center"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{once:true, amount:0.5}}
+          transition={{duration: 0.5}}
+          variants={{
+            hidden: {opacity: 0, y: 50},
+            visible: { opacity: 1, y: 0}
+          }}
+        >
+          <img src="../assets/contact-image.jpeg" alt="contact" />
+        </motion.div>
+        
+        <motion.div
+          className="basis-1/2 mt-10 md:mt-0"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{once:true, amount:0.5}}
+          transition={{delay: 0.2, duration: 0.5}}
+          variants={{
+            hidden: {opacity: 0, y: 50},
+            visible: { opacity: 1, y: 0}
+          }}
+        >
+          <form
+            
+          >
+            
+          </form>
+        </motion.div>
+
+      </div>
     </section>
   )
 }

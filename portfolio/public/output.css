@@ -829,6 +829,10 @@ video {
   flex-basis: 60%;
 }
 
+.basis-1\/2{
+  flex-basis: 50%;
+}
+
 .resize{
   resize: both;
 }
