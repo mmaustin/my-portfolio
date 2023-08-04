@@ -696,6 +696,11 @@ video {
   margin-bottom: 2.5rem;
 }
 
+.my-5{
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
 .mb-10{
   margin-bottom: 2.5rem;
 }
@@ -806,6 +811,10 @@ video {
 
 .w-full{
   width: 100%;
+}
+
+.w-2\/4{
+  width: 50%;
 }
 
 .max-w-\[400px\]{
@@ -964,6 +973,11 @@ video {
 .py-6{
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+
+.py-48{
+  padding-top: 12rem;
+  padding-bottom: 12rem;
 }
 
 .pb-24{
@@ -1310,6 +1324,10 @@ body,
 
   .md\:justify-start{
     justify-content: flex-start;
+  }
+
+  .md\:justify-end{
+    justify-content: flex-end;
   }
 
   .md\:justify-between{
