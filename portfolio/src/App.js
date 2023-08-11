@@ -6,7 +6,7 @@ import Navbar from './scenes/Navbar';
 import MySkills from './scenes/MySkills';
 import LineGradient from './components/LineGradient';
 import Projects from './scenes/Projects';
-import Contact from './scenes/Contact';
+// import Contact from './scenes/Contact';
 
 function App() {
 
@@ -47,9 +47,9 @@ function App() {
         <Projects />
       </div>      
       <LineGradient />
-      <div className="w-5/6 mx-auto">
+      {/* <div className="w-5/6 mx-auto">
         <Contact />
-      </div>      
+      </div>       */}
     </div>
   );
 }
