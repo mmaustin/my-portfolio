@@ -1,6 +1,11 @@
 import { motion } from "framer-motion";
 import LineGradient from "../components/LineGradient";
 
+const writer = "https://images.unsplash.com/photo-1664575262619-b28fef7a40a4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1432&q=80"
+const history = "https://images.unsplash.com/photo-1576568699714-a3f4950805d5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1742&q=80"
+const citizenship = "https://images.unsplash.com/photo-1525799165-f95e2ccbb152?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80"
+const neighborhood = "https://images.unsplash.com/photo-1577401159468-3bbc7ee440b5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80"
+
 const container = {
   hidden: {},
   visible: {
@@ -27,7 +32,8 @@ const Project = ({title}) => {
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Error tempora placeat mollitia cum, eius eum repudiandae id, quam pariatur ipsa, esse excepturi? Sint, consectetur illum quia nulla fugiat facere officiis.
         </p></a>
       </div>
-      <img src={`../assets/${projectTitle}.jpeg`} alt={projectTitle} />
+      {/* <img src={`../assets/${projectTitle}.jpeg`} alt={projectTitle} /> */}
+      <img src={`${neighborhood}`} alt={projectTitle} />
     </motion.div> 
   )
 
@@ -86,7 +92,8 @@ const Projects = () => {
             className="flex justify-center text-center items-center p-10 bg-blue max-w-[400px] text-2xl font-playlist font-semibold"
           >
             SMOOTH USER EXPERIENCE
-          </div>          
+          </div>
+          <img src={`${writer}`} alt="project-7" />    
         </motion.div>        
       </div>
     </section>
