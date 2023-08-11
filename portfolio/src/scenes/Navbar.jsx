@@ -40,9 +40,9 @@ const Navbar = ({isTopOfPAge, selectedPage, setSelectedPage}) => {
             <Link
               page="Projects" selectedPage={selectedPage} setSelectedPage={setSelectedPage}
             />
-            <Link
+            {/* <Link
               page="Contact" selectedPage={selectedPage} setSelectedPage={setSelectedPage}
-            />
+            /> */}
           </div>
         ) : (
           <button
@@ -70,9 +70,9 @@ const Navbar = ({isTopOfPAge, selectedPage, setSelectedPage}) => {
               <Link
                 page="Projects" selectedPage={selectedPage} setSelectedPage={setSelectedPage}
               />
-              <Link
+              {/* <Link
                 page="Contact" selectedPage={selectedPage} setSelectedPage={setSelectedPage}
-              />              
+              />               */}
             </div>
           </div>
         )}
