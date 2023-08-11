@@ -1,7 +1,8 @@
 import { motion } from "framer-motion";
 import LineGradient from "../components/LineGradient";
 
-const writer = "https://images.unsplash.com/photo-1664575262619-b28fef7a40a4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1432&q=80"
+const writer = "https://images.unsplash.com/photo-1508780709619-79562169bc64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80"
+//const history = "https://images.unsplash.com/photo-1550533105-d412cbf5bfcc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1338&q=80"
 const history = "https://images.unsplash.com/photo-1576568699714-a3f4950805d5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1742&q=80"
 const citizenship = "https://images.unsplash.com/photo-1525799165-f95e2ccbb152?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80"
 const neighborhood = "https://images.unsplash.com/photo-1577401159468-3bbc7ee440b5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80"
@@ -18,7 +19,7 @@ const projectVariant = {
   visible: {opacity: 1, scale: 1}
 }
 
-const Project = ({title}) => {
+const Project = ({title, address}) => {
   const overlayStyles = `absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500
     bg-yellow z-30 flex flex-col justify-center items-center text-center p-16 text-red`;
 
@@ -33,7 +34,7 @@ const Project = ({title}) => {
         </p></a>
       </div>
       {/* <img src={`../assets/${projectTitle}.jpeg`} alt={projectTitle} /> */}
-      <img src={`${neighborhood}`} alt={projectTitle} />
+      <img src={`${address}`} alt={projectTitle} />
     </motion.div> 
   )
 
@@ -81,10 +82,10 @@ const Projects = () => {
           >
             USER INTERFACE
           </div>
-            <Project title="Project 1" />
-            <Project title="Project 2" />
-            <Project title="Project 3" />
-            <Project title="Project 4" />
+            <Project address={writer} title="Project 1" />
+            <Project address={history} title="Project 2" />
+            <Project address={citizenship} title="Project 3" />
+            <Project address={neighborhood} title="Project 4" />
             {/* <Project title="Project 5" />
             <Project title="Project 6" />
             <Project title="Project 7" /> */}
@@ -93,7 +94,6 @@ const Projects = () => {
           >
             SMOOTH USER EXPERIENCE
           </div>
-          <img src={`${writer}`} alt="project-7" />    
         </motion.div>        
       </div>
     </section>
