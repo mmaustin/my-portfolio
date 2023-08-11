@@ -16,7 +16,7 @@ const Contact = () => {
 
   return (
     <section id="contact" className="py-48">
-      <motion.div
+      {/* <motion.div
         className="md:w-2/5 mx-auto text-center"
         initial="hidden"
         whileInView="visible"
@@ -38,9 +38,9 @@ const Contact = () => {
             <LineGradient width="mx-auto w-2/4" />
           </div>
         </div>
-      </motion.div>   
+      </motion.div>    */}
 
-{/*      <div className="md:flex md:justify-between gap-16 mt-5">
+     <div className="md:flex md:justify-between gap-16 mt-5">
         <motion.div
           className="basis-1/2 flex justify-center"
           initial="hidden"
@@ -69,7 +69,7 @@ const Contact = () => {
           <form
            target="_blank"
            onSubmit={onSubmit}
-           action="https://formsubmit.co/mccrayaustin@ymail.com"
+           action="https://formsubmit.co/tubach75@hotmail.com"
            method="POST" 
           >
            <input
@@ -130,7 +130,7 @@ const Contact = () => {
           </form>
         </motion.div>
 
-      </div> */}
+      </div>
     </section>
   )
 }
