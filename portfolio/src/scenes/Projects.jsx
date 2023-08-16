@@ -2,10 +2,14 @@ import { motion } from "framer-motion";
 import LineGradient from "../components/LineGradient";
 
 const writer = "https://images.unsplash.com/photo-1508780709619-79562169bc64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80"
-//const history = "https://images.unsplash.com/photo-1550533105-d412cbf5bfcc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1338&q=80"
 const history = "https://images.unsplash.com/photo-1576568699714-a3f4950805d5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1742&q=80"
 const citizenship = "https://images.unsplash.com/photo-1525799165-f95e2ccbb152?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80"
 const neighborhood = "https://images.unsplash.com/photo-1577401159468-3bbc7ee440b5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80"
+
+const writersForum = "WRITERS FORUM";
+const randomHistory = "RANDOM HISTORY";
+const citizenshipTest = "CITIZENSHIP TEST PREP";
+const communityBoard = "VIRGINIA PLACE: COMMUNITY BOARD"
 
 const container = {
   hidden: {},
@@ -19,22 +23,19 @@ const projectVariant = {
   visible: {opacity: 1, scale: 1}
 }
 
-const Project = ({title, address, email}) => {
+const Project = ({title, pictureAddress, projectAddress, coverText}) => {
   const overlayStyles = `absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500
     bg-yellow z-30 flex flex-col justify-center items-center text-center p-16 text-red`;
 
-  const projectTitle = title.split(" ").join("-").toLowerCase();
-
+  const projectTitle = title.split(" ").join("-").toLowerCasprojectAddress
   return (
     <motion.div variants={projectVariant} className="relative">
       <div className={overlayStyles}>
-        <p className="text-2xl font-playfair">{title}</p>
-        <a href={email} target="_blank" rel="noreferrer"><p className="mt-7">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Error tempora placeat mollitia cum, eius eum repudiandae id, quam pariatur ipsa, esse excepturi? Sint, consectetur illum quia nulla fugiat facere officiis.
-        </p></a>
+        {/* <p className="text-2xl font-playfair">{coverText}</p> */}
+        <a href={projectAddress} target="_blank" rel="noreferrer"><p className="text-2xl font-playfair">{coverText}</p></a>
       </div>
       {/* <img src={`../assets/${projectTitle}.jpeg`} alt={projectTitle} /> */}
-      <img src={`${address}`} alt={projectTitle} />
+      <img src={`${pictureAddress}`} alt={projectTitle} />
     </motion.div> 
   )
 
@@ -82,10 +83,10 @@ const Projects = () => {
           >
             USER INTERFACE
           </div>
-            <Project address={writer} title="Project 1" email="https://writers-forum.onrender.com"/>
-            <Project address={history} title="Project 2" email={"https://random-history.onrender.com"}/>
-            <Project address={citizenship} title="Project 3" email={"https://citizenship-app.onrender.com"}/>
-            <Project address={neighborhood} title="Project 4" email={"https://virginia-place.onrender.com"}/>
+            <Project pictureAddress={writer} title="Project 1" projectAddress="https://writers-forum.onrender.com" coverText={writersForum}/>
+            <Project pictureAddress={history} title="Project 2" projectAddress={"https://random-history.onrender.com"} coverText={randomHistory}/>
+            <Project pictureAddress={citizenship} title="Project 3" projectAddress={"https://citizenship-app.onrender.com"} coverText={citizenshipTest}/>
+            <Project pictureAddress={neighborhood} title="Project 4" projectAddress={"https://virginia-place.onrender.com"} coverText={communityBoard}/>
             {/* <Project title="Project 5" />
             <Project title="Project 6" />
             <Project title="Project 7" /> */}
