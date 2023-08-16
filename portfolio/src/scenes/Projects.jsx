@@ -19,7 +19,7 @@ const projectVariant = {
   visible: {opacity: 1, scale: 1}
 }
 
-const Project = ({title, address}) => {
+const Project = ({title, address, email}) => {
   const overlayStyles = `absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500
     bg-yellow z-30 flex flex-col justify-center items-center text-center p-16 text-red`;
 
@@ -29,7 +29,7 @@ const Project = ({title, address}) => {
     <motion.div variants={projectVariant} className="relative">
       <div className={overlayStyles}>
         <p className="text-2xl font-playfair">{title}</p>
-        <a href="https://citizenship-app.onrender.com/" target="_blank" rel="noreferrer"><p className="mt-7">
+        <a href={email} target="_blank" rel="noreferrer"><p className="mt-7">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Error tempora placeat mollitia cum, eius eum repudiandae id, quam pariatur ipsa, esse excepturi? Sint, consectetur illum quia nulla fugiat facere officiis.
         </p></a>
       </div>
@@ -82,10 +82,10 @@ const Projects = () => {
           >
             USER INTERFACE
           </div>
-            <Project address={writer} title="Project 1" />
-            <Project address={history} title="Project 2" />
-            <Project address={citizenship} title="Project 3" />
-            <Project address={neighborhood} title="Project 4" />
+            <Project address={writer} title="Project 1" email="https://writers-forum.onrender.com"/>
+            <Project address={history} title="Project 2" email={"https://random-history.onrender.com"}/>
+            <Project address={citizenship} title="Project 3" email={"https://citizenship-app.onrender.com"}/>
+            <Project address={neighborhood} title="Project 4" email={"https://virginia-place.onrender.com"}/>
             {/* <Project title="Project 5" />
             <Project title="Project 6" />
             <Project title="Project 7" /> */}
@@ -94,7 +94,7 @@ const Projects = () => {
           >
             SMOOTH USER EXPERIENCE
           </div>
-        </motion.div>        
+        </motion.div>
       </div>
     </section>
   )
