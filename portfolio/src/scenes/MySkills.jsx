@@ -114,7 +114,7 @@ const MySkills = () => {
               <div className="w-1/2 md:w-3/4 h-32 bg-yellow absolute right-0 top-0 z-[-1]" />
             </div>
             <p className="mt-5">
-              . . . I've Never Been A Fan Of CSS, But Learning Tailwind And Material UI Is Slowly Leading To A Change Of Heart!
+              . . . I've Never Been A Fan Of CSS, But Learning TailwindCSS And Material UI Is Slowly Leading To A Change Of Heart!
             </p>
           </motion.div>
         </div>
