@@ -26,7 +26,7 @@ const MySkills = () => {
           </p>
           <LineGradient width="w-1/3" />
           <p className="mt-10 mb-7">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet neque sed facilis? Sunt, dolores. A aliquid eaque, eos totam magni sed nam soluta quo nisi quis inventore quasi magnam voluptas?
+            Diligent, Determined, Focused, Resilient, Resourceful, Constant Learner.  I embody all of the keywords!
           </p>
         </motion.div>
 
@@ -62,13 +62,13 @@ const MySkills = () => {
           >
             <div className="relative h-32">
               <div className="z-10">
-                <p className="font-playfair font-semibold text-5xl">01</p>
-                <p className="font-playfair font-semibold text-3xl mt-3">Experience</p>
+                {/* <p className="font-playfair font-semibold text-5xl">01</p> */}
+                <p className="font-playfair font-semibold text-3xl mt-3">BACKEND</p>
               </div>
               <div className="w-1/2 md:w-3/4 h-32 bg-blue absolute right-0 top-0 z-[-1]" />
             </div>
             <p className="mt-5">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore reprehenderit magni vitae sunt pariatur dicta libero consequuntur voluptatum dolorem, deserunt ipsum minima illo, iusto odio! Mollitia debitis repellendus illo nisi.
+              MongoDB, Mongoose, Express, NodeJs, JWT, User Authentication & Authorization, Postman, Error Handling, CRUD Operations, Experience With Rails API and Relational Databases.
             </p>
           </motion.div>
 
@@ -85,13 +85,13 @@ const MySkills = () => {
           >
             <div className="relative h-32">
               <div className="z-10">
-                <p className="font-playfair font-semibold text-5xl">02</p>
-                <p className="font-playfair font-semibold text-3xl mt-3">Innovative</p>
+                {/* <p className="font-playfair font-semibold text-5xl">02</p> */}
+                <p className="font-playfair font-semibold text-3xl mt-3">FRONTEND</p>
               </div>
               <div className="w-1/2 md:w-3/4 h-32 bg-red absolute right-0 top-0 z-[-1]" />
             </div>
             <p className="mt-5">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore reprehenderit magni vitae sunt pariatur dicta libero consequuntur voluptatum dolorem, deserunt ipsum minima illo, iusto odio! Mollitia debitis repellendus illo nisi.
+              Javascript, React (the React Suite), Redux Toolkit, Redux Persist, Form Submission, Formik, Yup, Styled Components, Proxy API Requests, Responsive Design, HTML/CSS.
             </p>
           </motion.div>
 
@@ -108,13 +108,13 @@ const MySkills = () => {
           >
             <div className="relative h-32">
               <div className="z-10">
-                <p className="font-playfair font-semibold text-5xl">03</p>
-                <p className="font-playfair font-semibold text-3xl mt-3">Imaginative</p>
+                {/* <p className="font-playfair font-semibold text-5xl">03</p> */}
+                <p className="font-playfair font-semibold text-3xl mt-3">HONESTLY . . .</p>
               </div>
               <div className="w-1/2 md:w-3/4 h-32 bg-yellow absolute right-0 top-0 z-[-1]" />
             </div>
             <p className="mt-5">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore reprehenderit magni vitae sunt pariatur dicta libero consequuntur voluptatum dolorem, deserunt ipsum minima illo, iusto odio! Mollitia debitis repellendus illo nisi.
+              . . . I've Never Been A Fan Of CSS, But Learning Tailwind And Material UI Is Slowly Leading To A Change Of Heart!
             </p>
           </motion.div>
         </div>

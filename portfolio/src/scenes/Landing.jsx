@@ -53,8 +53,8 @@ const Landing = ({setSelectedPage}) => {
                 Austin
               </span>
             </p>
-            <p className="mt-10 mb-7 text-sm text-center md:text-start">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam dolore consequuntur sint beatae ipsum? Sint optio ut aut doloribus corporis. Beatae ab tenetur consectetur optio laudantium nulla eius magni quos!
+            <p className="mt-10 mb-7 text-lg text-center md:text-start">
+              Interested in coding, history, jazz, and all kinds of things?  Me too!  Let's connect.
             </p>
           </motion.div>
 

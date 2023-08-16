@@ -6,10 +6,10 @@ const history = "https://images.unsplash.com/photo-1576568699714-a3f4950805d5?ix
 const citizenship = "https://images.unsplash.com/photo-1525799165-f95e2ccbb152?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80"
 const neighborhood = "https://images.unsplash.com/photo-1577401159468-3bbc7ee440b5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80"
 
-const writersForum = "WRITERS FORUM";
+const writersForum = "WRITERS FORUM˚˚";
 const randomHistory = "RANDOM HISTORY";
 const citizenshipTest = "CITIZENSHIP TEST PREP";
-const communityBoard = "VIRGINIA PLACE: COMMUNITY BOARD"
+const communityBoard = "VIRGINIA PLACE: COMMUNITY BOARD˚˚"
 
 const container = {
   hidden: {},
@@ -45,7 +45,7 @@ const Projects = () => {
 
 
   return (
-    <section id="projects" className="pt-48 pb-48">
+    <section id="projects" className="pt-24 pb-24">
       <motion.div
         className="md:w-2/5 mx-auto text-center"
         initial="hidden"
@@ -61,13 +61,13 @@ const Projects = () => {
           <p className="font-playlist font-semibold text-4xl">
             <span className="text-red">PRO</span>JECTS
           </p>
-          <div className="flex justify-center mt-5">  
+          <div className="flex justify-center mt-5 mb-10">  
             <LineGradient width="w-2/3" />
           </div>
         </div>
-        <p className="mt-10 mb-10">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet neque sed facilis? Sunt, dolores. A aliquid eaque, eos totam magni sed nam soluta quo nisi quis inventore quasi magnam voluptas?
-        </p>
+        {/* <p className="mt-10 mb-10">
+          ˚˚apologies for the slow loading time
+        </p> */}
       </motion.div>
 
       <div className="flex justify-center">
@@ -81,7 +81,7 @@ const Projects = () => {
           <div
             className="flex justify-center text-center items-center p-10 bg-red max-w-[400px] max-h-[400px] text-2xl font-playlist font-semibold"
           >
-            USER INTERFACE
+            ALWAYS
           </div>
             <Project pictureAddress={writer} title="Project 1" projectAddress="https://writers-forum.onrender.com" coverText={writersForum}/>
             <Project pictureAddress={history} title="Project 2" projectAddress={"https://random-history.onrender.com"} coverText={randomHistory}/>
@@ -93,10 +93,13 @@ const Projects = () => {
           <div
             className="flex justify-center text-center items-center p-10 bg-blue max-w-[400px] text-2xl font-playlist font-semibold"
           >
-            SMOOTH USER EXPERIENCE
+            STRIVING
           </div>
         </motion.div>
       </div>
+        <p className="mt-10 mb-10">
+          ˚˚apologies for the slow loading time
+        </p>
     </section>
   )
 }
