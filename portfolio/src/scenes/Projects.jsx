@@ -14,16 +14,16 @@ const communityBoard = "VIRGINIA PLACE: COMMUNITY BOARD˚˚"
 const container = {
   hidden: {},
   visible: {
-    transition: {staggerChildren: 0.2,},
+    transition: { staggerChildren: 0.2, },
   },
 };
 
 const projectVariant = {
-  hidden: {opacity: 0, scale: 0.8},
-  visible: {opacity: 1, scale: 1}
+  hidden: { opacity: 0, scale: 0.8 },
+  visible: { opacity: 1, scale: 1 }
 }
 
-const Project = ({title, pictureAddress, projectAddress, coverText}) => {
+const Project = ({ title, pictureAddress, projectAddress, coverText }) => {
   const overlayStyles = `absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500
     bg-yellow z-30 flex flex-col justify-center items-center text-center p-16 text-red`;
 
@@ -36,7 +36,7 @@ const Project = ({title, pictureAddress, projectAddress, coverText}) => {
       </div>
       {/* <img src={`../assets/${projectTitle}.jpeg`} alt={projectTitle} /> */}
       <img src={`${pictureAddress}`} alt={projectTitle} />
-    </motion.div> 
+    </motion.div>
   )
 
 }
@@ -50,18 +50,18 @@ const Projects = () => {
         className="md:w-2/5 mx-auto text-center"
         initial="hidden"
         whileInView="visible"
-        viewport={{once:true, amount:0.5}}
-        transition={{duration: 0.5}}
+        viewport={{ once: true, amount: 0.5 }}
+        transition={{ duration: 0.5 }}
         variants={{
-          hidden: {opacity: 0, y: -50},
-          visible: { opacity: 1, y: 0}
-        }}        
+          hidden: { opacity: 0, y: -50 },
+          visible: { opacity: 1, y: 0 }
+        }}
       >
         <div>
           <p className="font-playlist font-semibold text-4xl">
             <span className="text-red">PRO</span>JECTS
           </p>
-          <div className="flex justify-center mt-5 mb-10">  
+          <div className="flex justify-center mt-5 mb-10">
             <LineGradient width="w-2/3" />
           </div>
         </div>
@@ -76,18 +76,18 @@ const Projects = () => {
           variants={container}
           initial="hidden"
           whileInView="visible"
-          viewport={{once:true, amount:0.2}}
+          viewport={{ once: true, amount: 0.2 }}
         >
           <div
             className="flex justify-center text-center items-center p-10 bg-red max-w-[400px] max-h-[400px] text-2xl font-playlist font-semibold"
           >
             ALWAYS
           </div>
-            <Project pictureAddress={writer} title="Project 1" projectAddress="https://writers-forum.onrender.com" coverText={writersForum}/>
-            <Project pictureAddress={history} title="Project 2" projectAddress={"https://random-history.onrender.com"} coverText={randomHistory}/>
-            <Project pictureAddress={citizenship} title="Project 3" projectAddress={"https://citizenship-app.onrender.com"} coverText={citizenshipTest}/>
-            <Project pictureAddress={neighborhood} title="Project 4" projectAddress={"https://virginia-place.onrender.com"} coverText={communityBoard}/>
-            {/* <Project title="Project 5" />
+          <Project pictureAddress={writer} title="Project 1" projectAddress="https://writers-forum.onrender.com" coverText={writersForum} />
+          <Project pictureAddress={history} title="Project 2" projectAddress={"https://random-history.onrender.com"} coverText={randomHistory} />
+          <Project pictureAddress={citizenship} title="Project 3" projectAddress={"https://citizenship-app.onrender.com"} coverText={citizenshipTest} />
+          <Project pictureAddress={neighborhood} title="Project 4" projectAddress={"https://virginia-place.onrender.com"} coverText={communityBoard} />
+          {/* <Project title="Project 5" />
             <Project title="Project 6" />
             <Project title="Project 7" /> */}
           <div
@@ -97,9 +97,9 @@ const Projects = () => {
           </div>
         </motion.div>
       </div>
-        <p className="mt-10 mb-10">
-          ˚˚apologies for the slow loading time
-        </p>
+      <p className="mt-10 mb-10">
+        ˚˚apologies for the slow loading time
+      </p>
     </section>
   )
 }
