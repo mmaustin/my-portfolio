@@ -1,4 +1,4 @@
-import {useEffect, useState} from 'react';
+import { useEffect, useState } from 'react';
 import DotGroup from "./scenes/DotGroup";
 import useMediaQuery from './hooks/useMediaQuery';
 import Landing from './scenes/Landing';
@@ -11,23 +11,23 @@ import Footer from './scenes/Footer';
 
 function App() {
 
-  const [selectedPage, setSelectedPage] = useState('home');
+  const [selectedPage, setSelectedPage] = useState('about');
   const [isTopOfPAge, setIsTopOfPage] = useState(true);
   const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
 
   useEffect(() => {
     const handleScroll = () => {
-      if(window.scrollY === 0) setIsTopOfPage(true);
-      if(window.scrollY !== 0) setIsTopOfPage(false);
+      if (window.scrollY === 0) setIsTopOfPage(true);
+      if (window.scrollY !== 0) setIsTopOfPage(false);
     };
     window.addEventListener('scroll', handleScroll);
-    return ()=> window.removeEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
   }, [])
 
   return (
-  //   <h1 className="text-3xl font-bold underline">
-  //   Hello world!
-  // </h1>
+    //   <h1 className="text-3xl font-bold underline">
+    //   Hello world!
+    // </h1>
     <div className="app bg-deep-blue " >
       <Navbar isTopOfPAge={isTopOfPAge} selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
       <div className="w-5/6 mx-auto md:h-full">
@@ -46,9 +46,9 @@ function App() {
       <LineGradient />
       <div className="w-5/6 mx-auto">
         <Projects />
-      </div>      
+      </div>
       <LineGradient />
-      <Footer />  
+      <Footer />
     </div>
   );
 }

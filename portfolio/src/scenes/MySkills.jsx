@@ -14,19 +14,19 @@ const MySkills = () => {
           className="md:w-1/3"
           initial="hidden"
           whileInView="visible"
-          viewport={{once:true, amount:0.5}}
-          transition={{duration: 0.5}}
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ duration: 0.5 }}
           variants={{
-            hidden: {opacity: 0, x: -50},
-            visible: { opacity: 1, x: 0}
-          }}        
+            hidden: { opacity: 0, x: -50 },
+            visible: { opacity: 1, x: 0 }
+          }}
         >
           <p className="font-playlist font-semibold text-4xl mb-5">
             MY <span className="text-red">SKILLS</span>
           </p>
           <LineGradient width="w-1/3" />
           <p className="mt-10 mb-7">
-            Diligent, Determined, Focused, Resilient, Resourceful, Constant Learner.  I embody all of the keywords!
+            Diligent, Determined, Focused, Resilient, Resourceful.
           </p>
         </motion.div>
 
@@ -48,76 +48,76 @@ const MySkills = () => {
         </div>
       </div>
 
-        <div className="md:flex md:justify-between mt-16 gap-32">
-          <motion.div
-            className="md:w-1/3 mt-10"
-            initial="hidden"
-            whileInView="visible"
-            viewport={{once:true, amount:0.5}}
-            transition={{duration: 0.5}}
-            variants={{
-              hidden: {opacity: 0, y: 50},
-              visible: { opacity: 1, y: 0}
-            }}          
-          >
-            <div className="relative h-32">
-              <div className="z-10">
-                {/* <p className="font-playfair font-semibold text-5xl">01</p> */}
-                <p className="font-playfair font-semibold text-3xl mt-3">BACKEND</p>
-              </div>
-              <div className="w-1/2 md:w-3/4 h-32 bg-blue absolute right-0 top-0 z-[-1]" />
+      <div className="md:flex md:justify-between mt-16 gap-32">
+        <motion.div
+          className="md:w-1/3 mt-10"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ duration: 0.5 }}
+          variants={{
+            hidden: { opacity: 0, y: 50 },
+            visible: { opacity: 1, y: 0 }
+          }}
+        >
+          <div className="relative h-32">
+            <div className="z-10">
+              {/* <p className="font-playfair font-semibold text-5xl">01</p> */}
+              <p className="font-playfair font-semibold text-3xl mt-3">BACKEND</p>
             </div>
-            <p className="mt-5">
-              MongoDB, Mongoose, Express, NodeJs, JWT, User Authentication & Authorization, Postman, Error Handling, CRUD Operations, Experience With Rails API and Relational Databases.
-            </p>
-          </motion.div>
+            <div className="w-1/2 md:w-3/4 h-32 bg-blue absolute right-0 top-0 z-[-1]" />
+          </div>
+          <p className="mt-5">
+            MongoDB, Mongoose, Express, NodeJs, JWT, User Authentication & Authorization, Postman, Error Handling, CRUD Operations, Experience With Rails API and Relational Databases.
+          </p>
+        </motion.div>
 
-          <motion.div
-            className="md:w-1/3 mt-10"
-            initial="hidden"
-            whileInView="visible"
-            viewport={{once:true, amount:0.5}}
-            transition={{delay: 0.2, duration: 0.5}}
-            variants={{
-              hidden: {opacity: 0, y: 50},
-              visible: { opacity: 1, y: 0}
-            }}          
-          >
-            <div className="relative h-32">
-              <div className="z-10">
-                {/* <p className="font-playfair font-semibold text-5xl">02</p> */}
-                <p className="font-playfair font-semibold text-3xl mt-3">FRONTEND</p>
-              </div>
-              <div className="w-1/2 md:w-3/4 h-32 bg-red absolute right-0 top-0 z-[-1]" />
+        <motion.div
+          className="md:w-1/3 mt-10"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ delay: 0.2, duration: 0.5 }}
+          variants={{
+            hidden: { opacity: 0, y: 50 },
+            visible: { opacity: 1, y: 0 }
+          }}
+        >
+          <div className="relative h-32">
+            <div className="z-10">
+              {/* <p className="font-playfair font-semibold text-5xl">02</p> */}
+              <p className="font-playfair font-semibold text-3xl mt-3">FRONTEND</p>
             </div>
-            <p className="mt-5">
-              Javascript, React (the React Suite), Redux Toolkit, Redux Persist, FormSubmit, Formik, Yup, Styled Components, Proxy API Requests, Responsive Design, HTML/CSS.
-            </p>
-          </motion.div>
+            <div className="w-1/2 md:w-3/4 h-32 bg-red absolute right-0 top-0 z-[-1]" />
+          </div>
+          <p className="mt-5">
+            Javascript, React (the React Suite), Redux Toolkit, Redux Persist, FormSubmit, Formik, Yup, Styled Components, Proxy API Requests, Responsive Design, HTML/CSS.
+          </p>
+        </motion.div>
 
-          <motion.div
-            className="md:w-1/3 mt-10"
-            initial="hidden"
-            whileInView="visible"
-            viewport={{once:true, amount:0.5}}
-            transition={{delay: 0.4, duration: 0.5}}
-            variants={{
-              hidden: {opacity: 0, y: 50},
-              visible: { opacity: 1, y: 0}
-            }}          
-          >
-            <div className="relative h-32">
-              <div className="z-10">
-                {/* <p className="font-playfair font-semibold text-5xl">03</p> */}
-                <p className="font-playfair font-semibold text-3xl mt-3">HONESTLY . . .</p>
-              </div>
-              <div className="w-1/2 md:w-3/4 h-32 bg-yellow absolute right-0 top-0 z-[-1]" />
+        <motion.div
+          className="md:w-1/3 mt-10"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ delay: 0.4, duration: 0.5 }}
+          variants={{
+            hidden: { opacity: 0, y: 50 },
+            visible: { opacity: 1, y: 0 }
+          }}
+        >
+          <div className="relative h-32">
+            <div className="z-10">
+              {/* <p className="font-playfair font-semibold text-5xl">03</p> */}
+              <p className="font-playfair font-semibold text-3xl mt-3">CONSTANT LEARNER</p>
             </div>
-            <p className="mt-5">
-              . . . I've Never Been A Fan Of CSS, But Learning TailwindCSS And Material UI Is Slowly Leading To A Change Of Heart!
-            </p>
-          </motion.div>
-        </div>
+            <div className="w-1/2 md:w-3/4 h-32 bg-yellow absolute right-0 top-0 z-[-1]" />
+          </div>
+          <p className="mt-5">
+            Currently learning Typescript, improving my NextJS, Tailwind, and Shadcn/ui abilities, and striving to become a more skilled algorithm writer.
+          </p>
+        </motion.div>
+      </div>
       {/* </div> */}
     </section>
   )
